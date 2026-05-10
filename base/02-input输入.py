@@ -1,4 +1,7 @@
-from functools import reduce
-numbers = [1, 2, 3, 4]
-product = reduce(lambda x, y: x * y, numbers)
-print(product)
+# from functools import reduce
+# numbers = [1, 2, 3, 4]
+# product = reduce(lambda x, y: x * y, numbers)
+# print(product)
+
+name = input('please input your name:')
+print(f'{name} is a good student.')
