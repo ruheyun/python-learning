@@ -30,7 +30,7 @@ class Solution:
             slow, fast = slow.next, fast.next.next
         mid, slow.next = slow.next, None
         left, right = self.sortList2(head), self.sortList2(mid)
-        h = res =ListNode(0)
+        h = res = ListNode(0)
         while left and right:
             if left.val <= right.val: 
                 h.next, left = left, left.next
