@@ -22,7 +22,7 @@
 """
 
 
-name = 'ruhe'
+name = 'ruhe'  # '='：赋值
 age = int(input('please input age:'))  # input 语句会将输入变成字符串类型，因此年龄是整数类型，需要使用 int 转换
 
 print(name, age)
