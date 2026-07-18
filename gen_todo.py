@@ -51,11 +51,11 @@ def generate_monthly_markdown(year, month, tasks, filename=None):
     content = "\n".join(lines)
     
     # 3. 保存文件
-    if not filename:
-        filename = f"{year}-{month:02d}_清单.md"
+    # if not filename:
+    #     filename = f"{year}-{month:02d}_清单.md"
     
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(content)
+    # with open(filename, "w", encoding="utf-8") as f:
+    #     f.write(content)
         
     print(f"✅ 成功生成文件: {filename}")
     print("-" * 30)
@@ -65,10 +65,10 @@ def generate_monthly_markdown(year, month, tasks, filename=None):
 if __name__ == "__main__":
     # 在这里修改你的配置
     target_year = 2026
-    target_month = 7
+    target_month = 6
     
     # 在这里修改你的任务列名
-    my_tasks = ["阅读", "背单词", "写代码", "看论文"]
+    my_tasks = ["阅读", "背单词", "练听力", "写代码", "看论文"]
     
     # 运行生成
     generate_monthly_markdown(target_year, target_month, my_tasks)
