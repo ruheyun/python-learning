@@ -15,5 +15,4 @@ miniconda（只是学习 python 基础可暂时不安装）
 
 - python基础（base）
 - 排序算法（sort）
-- 算法与数据结构学习（leetcode）
 - 密码学算法（cryptography）
