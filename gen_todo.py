@@ -24,7 +24,7 @@ def generate_monthly_markdown(year, month, tasks, filename=None):
     
     # 表头行 (第一列留空，后面接任务)
     # 格式: | | 阅读 | 背单词 | ... |
-    header = "| | " + " | ".join(tasks) + " |"
+    header = "| 日期 | " + " | ".join(tasks) + " |"
     lines.append(header)
     
     # 分隔行
@@ -65,10 +65,10 @@ def generate_monthly_markdown(year, month, tasks, filename=None):
 if __name__ == "__main__":
     # 在这里修改你的配置
     target_year = 2026
-    target_month = 6
+    target_month = 8
     
     # 在这里修改你的任务列名
-    my_tasks = ["阅读", "背单词", "练听力", "写代码", "看论文"]
+    my_tasks = ["阅读", "背单词", "练听力", "写代码", "看论文", "其他"]
     
     # 运行生成
     generate_monthly_markdown(target_year, target_month, my_tasks)
